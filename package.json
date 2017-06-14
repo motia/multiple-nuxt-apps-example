@@ -1,10 +1,11 @@
 {
   "dependencies": {
+    "concurrently": "^3.4.0",
     "nuxt": "^1.0.0-alpha.4"
   },
   "scripts": {
     "forum:dev": "nuxt --config-file apps/forum/nuxt.config.js",
     "blog:dev": "PORT=4000 nuxt --config-file apps/blog/nuxt.config.js",
-    "dev": "a"
+    "dev": "concurrently \"npm run forum:dev\" \"npm run blog:dev\""
   }
 }
