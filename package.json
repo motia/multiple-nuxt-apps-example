@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "nuxt": "^1.0.0-alpha.4"
+  },
+  "scripts": {
+    "blog:dev": "PORT=4000 nuxt --config-file apps/blog/nuxt.config.js",
   }
 }
